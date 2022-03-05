@@ -53,6 +53,11 @@ const routes = [
         path:'city',
         name:'city',
         component:()=> import('../views/city.vue')
+      },
+      {
+        path:'sign',
+        name:'sign',
+        component:()=>import('../views/home/sign.vue')
       }
     ]
   },
@@ -71,7 +76,8 @@ const routes = [
         component: ()=> import('../views/schedule.vue')
       }
     ]
-  }
+  },
+  
 ]
 
 const router = new VueRouter({

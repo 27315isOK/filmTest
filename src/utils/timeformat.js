@@ -1,10 +1,10 @@
 export default {
-    toWMD(time) {  // 传一个时间戳(秒)(1640908800),然后返回日期格式  周五 12月31日
-      const dd = new Date(time * 1000);  //以毫秒单位来创建时间对象
+    toWMD(time) {  // 传一个时间戳(秒)(1640908800),然后返回日期格式  周五 12月31日 时间戳:1970到至今的时间
+      const dd = new Date(time * 1000);  //以毫秒单位来创建时间对象,即接收一个毫秒，所以把时间戳乘1000得到多少毫秒再传给Data对象
       // console.log(dd.getMonth()+1)
       // console.log(dd.getDate())
       // console.log(dd.getDay())
-  
+      
   
       // 得到今天的时间
       const today = new Date();
